@@ -1,0 +1,336 @@
+*{
+    text-align: center;
+    margin:auto;
+    font-family: 'Roboto', sans-serif;
+
+}
+img{
+    width:800px;
+}
+
+
+body{
+    width:100%;
+    background: #000;
+    color:white;
+    
+}
+body h3{
+    text-align: left;
+    
+}
+
+h1{
+    font-size: 35px;
+    margin-top: 10px;
+}
+.biografia p{
+    font-size:20px;
+    text-align: justify;
+    margin: 0 20px;
+    margin-bottom: 10px;
+}
+.biografia h3{
+    font-size: 30px;
+    margin-left:20px;
+}
+
+
+
+
+header{
+    width:100%;
+}
+#btn-menu{
+    display:none;
+    
+}
+.icono-menu{
+    width:100%;
+}
+.btn-logo{
+    width:30px;
+}
+header label{
+    display:none;
+}
+.menu-lista{
+    margin: 0;
+    list-style: none;
+    padding:0;
+    display:flex;
+    
+}
+
+.menu-lista li:hover{
+    background: rgba(230, 230, 230, 0.9);
+
+}
+.menu-lista li a:hover{
+    color:#000;
+
+}
+.menu-lista a{
+    display: block;
+    padding:15px 20px;
+    text-decoration: none;
+    color:#fff;
+}
+/*boton para ir arriba*/
+.ir-arriba{
+    display:none;
+    background: #fff;
+    color:#000;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 80px;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+}
+
+.album{
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #666;
+    margin-top: 5px;
+    padding:10px 0;
+}
+
+.album-cover{
+    width:350px;
+    height:350px;
+    margin:0;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    -webkit-box-shadow: -1px 0px 12px 6px rgba(240,240,240,0.37); 
+    box-shadow: -1px 0px 12px 6px rgba(240,240,240,0.37);
+}
+
+
+.album-cover img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    
+    
+}
+.album-setlist{
+    width:500px;
+    margin:0;
+}
+
+.album-setlist ul{
+    list-style: none;
+    width:100%; 
+
+}
+
+.album li{
+    width:100%;
+    height: 20px;
+    margin:0;
+    padding-top:10px;
+   
+ 
+}
+.album li:first-child{
+    margin-bottom: 10px;
+}
+
+.nav{
+    width:40px;
+    height:40px;
+    cursor:pointer;
+    outline: none;
+    border: none;
+}
+.nav:hover{
+    background: rgba(230, 230, 230, 0.3);
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+  
+
+}
+.galeria-item{
+    width:400px;
+    height:300px;
+    margin: 5px 5px;
+}
+.galeria-item img{
+    width:100%;
+    height:100%;
+}
+
+.redes-sociales p{
+    font-size:24px;
+    text-align:justify;
+
+    margin:30px 20px;
+}
+
+.contenedor-icon{
+    width:100%;
+    padding-top: 5px;
+    display:inline-block;
+    text-align: center;
+    margin-bottom:20px;
+    
+}
+
+.contenedor-icon a{
+    text-decoration: none;
+    color:white;
+    font-size: 50px;
+    padding-left: 10px;
+}
+
+.contenedor-icon a:hover{
+    color:rgba(230, 230, 230, 0.3);
+}
+
+footer{
+    border-top:1px solid #ddd;
+    font-size: 25px;
+    
+}
+
+/*responsive design */
+@media screen and (max-width:900px){   
+    img{
+        width:700px;
+    }
+    .album{
+        grid-template-columns: 1fr 1fr;
+    }
+    .album-setlist{
+        width:300px;
+        
+    }
+    
+}
+
+@media screen and (max-width: 835px){
+    .galeria-item{
+        width:800px;
+        height:450px;
+        margin: 5px 5px;
+    }
+    .galeria-item img{
+        width:100%;
+        height:100%;
+    }   
+}
+
+@media screen and (max-width: 700px){
+    h1{
+        font-size: 25px!important;
+    }
+    h3{
+        font-size: 18px!important;
+    }
+    p{
+        font-size: 15px !important;
+    }
+    .album{
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+      
+    }
+    .album-cover{
+        margin:auto;
+        width: 300px;
+        height:300px;
+        margin-bottom: 30px;
+    }
+    .album-setlist{
+ 
+        margin-left:100px;
+    }
+
+    .album-setlist li{
+
+        font-size: 14px;
+    }
+    .container{
+        margin-left: 0;
+        max-width: 768px;
+    }
+    .container img{
+        width:100%;
+    }
+    .galeria-item{
+        width:700px;
+        height:350px;
+        margin: 5px 0px;
+    }
+    .galeria-item img{
+        width:100%;
+        height:100%;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    header label{
+        
+        position: relative;
+        display: inline-block;
+        margin-left:-90%;
+    }
+
+    .menu{
+        position:absolute;
+        width:30%;
+        margin-left: -70%;
+        transition: all .5s;
+        
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid #666;
+        background: #000;
+        width:200px;
+    }
+    #btn-menu:checked ~ .menu{
+        margin-left: 0;
+        
+    }
+    .biografia h3{
+        font-size: 18px;
+    }
+    .biografia p{
+        font-size:14px;
+    }
+    .album{
+        grid-template-columns: 1fr;
+    }
+    .album-setlist{
+        
+        width:200px;
+        
+    }
+    .album-setlist h2{
+        font-size:16px;
+    }
+
+    .contenedor-icon a{
+        text-decoration: none;
+        color:white;
+        font-size: 35px;
+        padding-left: 10px;
+    }
+    footer{
+        font-size: 14px;
+    }
+    
+
+}
